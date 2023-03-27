@@ -165,8 +165,8 @@
           }
         ],
         "responses": {
-          "2XX": {
-            "description": "random"
+          "200": {
+            "description": "this is a dummy response schema"
           }
         },
         "x-ms-pageable": {
@@ -198,9 +198,9 @@
           "required": true
         },
         "responses": {
-            "2XX": {
-                "description": "random"
-              }
+          "200": {
+            "description": "this is a dummy response schema"
+          }
         },
         "x-ms-docs-operation-type": "operation"
       },
@@ -235,9 +235,6 @@
         "schemas": {
           "microsoft.graph.entity": {
             "title": "entity",
-            "required": [
-              "@odata.type"
-            ],
             "type": "object",
             "properties": {
               "id": {
@@ -923,9 +920,6 @@
               },
               {
                 "title": "chatMessage",
-                "required": [
-                  "@odata.type"
-                ],
                 "type": "object",
                 "properties": {
                   "attachments": {
@@ -1118,9 +1112,6 @@
           },
           "microsoft.graph.chatMessageAttachment": {
             "title": "chatMessageAttachment",
-            "required": [
-              "@odata.type"
-            ],
             "type": "object",
             "properties": {
               "content": {
@@ -1165,9 +1156,6 @@
           },
           "microsoft.graph.itemBody": {
             "title": "itemBody",
-            "required": [
-              "@odata.type"
-            ],
             "type": "object",
             "properties": {
               "content": {
@@ -1202,9 +1190,6 @@
           },
           "microsoft.graph.channelIdentity": {
             "title": "channelIdentity",
-            "required": [
-              "@odata.type"
-            ],
             "type": "object",
             "properties": {
               "channelId": {
@@ -1224,9 +1209,6 @@
           },
           "microsoft.graph.eventMessageDetail": {
             "title": "eventMessageDetail",
-            "required": [
-              "@odata.type"
-            ],
             "type": "object",
             "properties": {
               "@odata.type": {
@@ -1276,9 +1258,6 @@
               },
               {
                 "title": "chatMessageFromIdentitySet",
-                "required": [
-                  "@odata.type"
-                ],
                 "type": "object",
                 "properties": {
                   "@odata.type": {
@@ -1302,9 +1281,6 @@
           },
           "microsoft.graph.chatMessageMention": {
             "title": "chatMessageMention",
-            "required": [
-              "@odata.type"
-            ],
             "type": "object",
             "properties": {
               "id": {
@@ -1344,9 +1320,6 @@
               },
               {
                 "title": "chatMessageMentionedIdentitySet",
-                "required": [
-                  "@odata.type"
-                ],
                 "type": "object",
                 "properties": {
                   "conversation": {
@@ -1372,9 +1345,6 @@
           },
           "microsoft.graph.identitySet": {
             "title": "identitySet",
-            "required": [
-              "@odata.type"
-            ],
             "type": "object",
             "properties": {
               "application": {
@@ -1429,9 +1399,6 @@
           },
           "microsoft.graph.identity": {
             "title": "identity",
-            "required": [
-              "@odata.type"
-            ],
             "type": "object",
             "properties": {
               "displayName": {
@@ -1473,9 +1440,6 @@
               },
               {
                 "title": "teamworkConversationIdentity",
-                "required": [
-                  "@odata.type"
-                ],
                 "type": "object",
                 "properties": {
                   "conversationIdentityType": {
@@ -1522,9 +1486,6 @@
           },
           "microsoft.graph.chatMessagePolicyViolation": {
             "title": "chatMessagePolicyViolation",
-            "required": [
-              "@odata.type"
-            ],
             "type": "object",
             "properties": {
               "dlpAction": {
@@ -1597,9 +1558,6 @@
           },
           "microsoft.graph.chatMessagePolicyViolationPolicyTip": {
             "title": "chatMessagePolicyViolationPolicyTip",
-            "required": [
-              "@odata.type"
-            ],
             "type": "object",
             "properties": {
               "complianceUrl": {
@@ -1646,9 +1604,6 @@
           },
           "microsoft.graph.chatMessageReaction": {
             "title": "chatMessageReaction",
-            "required": [
-              "@odata.type"
-            ],
             "type": "object",
             "properties": {
               "createdDateTime": {
@@ -1676,9 +1631,6 @@
               },
               {
                 "title": "chatMessageReactionIdentitySet",
-                "required": [
-                  "@odata.type"
-                ],
                 "type": "object",
                 "properties": {
                   "@odata.type": {
@@ -1697,9 +1649,6 @@
               },
               {
                 "title": "chatMessageHostedContent",
-                "required": [
-                  "@odata.type"
-                ],
                 "type": "object",
                 "properties": {
                   "@odata.type": {
@@ -1717,9 +1666,6 @@
               },
               {
                 "title": "teamworkHostedContent",
-                "required": [
-                  "@odata.type"
-                ],
                 "type": "object",
                 "properties": {
                   "contentBytes": {
