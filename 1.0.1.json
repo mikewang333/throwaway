@@ -17826,9 +17826,6 @@
                             "tagType": {
                                 "anyOf": [
                                     {
-                                        "$ref": "#/components/schemas/microsoft.graph.teamworkTagType"
-                                    },
-                                    {
                                         "type": "object",
                                         "nullable": true
                                     }
@@ -17901,9 +17898,6 @@
                             },
                             "provisionStatus": {
                                 "anyOf": [
-                                    {
-                                        "$ref": "#/components/schemas/microsoft.graph.operationStatus"
-                                    },
                                     {
                                         "type": "object",
                                         "nullable": true
@@ -20053,6 +20047,9 @@
                                 "items": {
                                     "anyOf": [
                                         {
+                                            "$ref": "#/components/schemas/microsoft.graph.chatMessageAttachment"
+                                        },
+                                        {
                                             "type": "object",
                                             "nullable": true
                                         }
@@ -20065,6 +20062,9 @@
                             },
                             "channelIdentity": {
                                 "anyOf": [
+                                    {
+                                        "$ref": "#/components/schemas/microsoft.graph.channelIdentity"
+                                    },
                                     {
                                         "type": "object",
                                         "nullable": true
@@ -20099,6 +20099,9 @@
                             "eventDetail": {
                                 "anyOf": [
                                     {
+                                        "$ref": "#/components/schemas/microsoft.graph.eventMessageDetail"
+                                    },
+                                    {
                                         "type": "object",
                                         "nullable": true
                                     }
@@ -20107,6 +20110,9 @@
                             },
                             "from": {
                                 "anyOf": [
+                                    {
+                                        "$ref": "#/components/schemas/microsoft.graph.chatMessageFromIdentitySet"
+                                    },
                                     {
                                         "type": "object",
                                         "nullable": true
@@ -20140,6 +20146,9 @@
                                 "items": {
                                     "anyOf": [
                                         {
+                                            "$ref": "#/components/schemas/microsoft.graph.chatMessageMention"
+                                        },
+                                        {
                                             "type": "object",
                                             "nullable": true
                                         }
@@ -20153,6 +20162,9 @@
                             "policyViolation": {
                                 "anyOf": [
                                     {
+                                        "$ref": "#/components/schemas/microsoft.graph.chatMessagePolicyViolation"
+                                    },
+                                    {
                                         "type": "object",
                                         "nullable": true
                                     }
@@ -20163,6 +20175,9 @@
                                 "type": "array",
                                 "items": {
                                     "anyOf": [
+                                        {
+                                            "$ref": "#/components/schemas/microsoft.graph.chatMessageReaction"
+                                        },
                                         {
                                             "type": "object",
                                             "nullable": true
@@ -20595,6 +20610,9 @@
                             "draftOpenShift": {
                                 "anyOf": [
                                     {
+                                        "$ref": "#/components/schemas/microsoft.graph.openShiftItem"
+                                    },
+                                    {
                                         "type": "object",
                                         "nullable": true
                                     }
@@ -20608,6 +20626,9 @@
                             },
                             "sharedOpenShift": {
                                 "anyOf": [
+                                    {
+                                        "$ref": "#/components/schemas/microsoft.graph.openShiftItem"
+                                    },
                                     {
                                         "type": "object",
                                         "nullable": true
@@ -20699,6 +20720,9 @@
                             "draftShift": {
                                 "anyOf": [
                                     {
+                                        "$ref": "#/components/schemas/microsoft.graph.shiftItem"
+                                    },
+                                    {
                                         "type": "object",
                                         "nullable": true
                                     }
@@ -20712,6 +20736,9 @@
                             },
                             "sharedShift": {
                                 "anyOf": [
+                                    {
+                                        "$ref": "#/components/schemas/microsoft.graph.shiftItem"
+                                    },
                                     {
                                         "type": "object",
                                         "nullable": true
@@ -20774,9 +20801,6 @@
                             },
                             "iconType": {
                                 "anyOf": [
-                                    {
-                                        "$ref": "#/components/schemas/microsoft.graph.timeOffReasonIconType"
-                                    },
                                     {
                                         "type": "object",
                                         "nullable": true
@@ -20849,6 +20873,9 @@
                             "draftTimeOff": {
                                 "anyOf": [
                                     {
+                                        "$ref": "#/components/schemas/microsoft.graph.timeOffItem"
+                                    },
+                                    {
                                         "type": "object",
                                         "nullable": true
                                     }
@@ -20857,6 +20884,9 @@
                             },
                             "sharedTimeOff": {
                                 "anyOf": [
+                                    {
+                                        "$ref": "#/components/schemas/microsoft.graph.timeOffItem"
+                                    },
                                     {
                                         "type": "object",
                                         "nullable": true
@@ -20962,9 +20992,6 @@
                     },
                     "contentType": {
                         "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/microsoft.graph.bodyType"
-                            },
                             {
                                 "type": "object",
                                 "nullable": true
