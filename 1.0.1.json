@@ -351,21 +351,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.team"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -928,21 +915,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.channel"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -1427,21 +1401,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.conversationMember"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -1932,21 +1893,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.chatMessage"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -2243,21 +2191,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.chatMessageHostedContent"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -2811,21 +2746,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.chatMessage"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -3142,21 +3064,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.chatMessageHostedContent"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -4304,21 +4213,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.sharedWithChannelTeamInfo"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -4944,21 +4840,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.teamsTab"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -5976,21 +5859,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.teamsAppInstallation"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -6498,21 +6368,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.conversationMember"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -7167,21 +7024,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.teamsAsyncOperation"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -7336,21 +7180,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.profilePhoto"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -7536,21 +7367,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.channel"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -7995,21 +7813,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.conversationMember"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -8460,21 +8265,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.chatMessage"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -8751,21 +8543,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.chatMessageHostedContent"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -9269,21 +9048,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.chatMessage"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -9580,21 +9346,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.chatMessageHostedContent"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -10612,21 +10365,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.sharedWithChannelTeamInfo"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -11192,21 +10932,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.teamsTab"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -11841,21 +11568,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.offerShiftRequest"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -12190,21 +11904,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.openShiftChangeRequest"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -12510,21 +12211,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.openShift"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -12802,21 +12490,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.schedulingGroup"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -13098,21 +12773,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.shift"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -13463,21 +13125,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.swapShiftsChangeRequest"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -13755,21 +13404,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.timeOffReason"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -14073,21 +13709,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.timeOffRequest"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -14365,21 +13988,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.timeOff"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -14691,21 +14301,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.teamworkTag"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -14983,21 +14580,8 @@
                     "required": true
                 },
                 "responses": {
-                    "2XX": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/microsoft.graph.teamworkTagMember"
-                                }
-                            }
-                        }
-                    },
-                    "4XX": {
-                        "$ref": "#/components/responses/error"
-                    },
-                    "5XX": {
-                        "$ref": "#/components/responses/error"
+                    "200": {
+                        "description": "this is a dummy response schema"
                     }
                 },
                 "x-ms-docs-operation-type": "operation"
@@ -17689,11 +17273,7 @@
                 "type": "string"
             }
         },
-        "responses": {
-            "error": {
-                "description": "this is a dummy response schema"
-            }
-        },
+        "responses": {},
         "parameters": {
             "top": {
                 "name": "$top",
@@ -17748,6 +17328,1734 @@
                     "type": "string"
                 }
             }
+        },
+        "examples": {},
+        "requestBodies": {}
+    },
+    "tags": [
+        {
+            "name": "admin.admin",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "admin.serviceAnnouncement",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "admin.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "admin.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "agreementAcceptances.agreementAcceptance",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "agreements.agreement",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "agreements.agreementAcceptance",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "agreements.agreementFile",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "agreements.agreementFileLocalization",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "appCatalogs.appCatalogs",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "appCatalogs.teamsApp",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "applications.application",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "applications.appManagementPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "applications.directoryObject",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "applications.extensionProperty",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "applications.federatedIdentityCredential",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "applications.homeRealmDiscoveryPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "applications.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "directoryObject.appRoleAssignment"
+        },
+        {
+            "name": "directoryObject.endpoint"
+        },
+        {
+            "name": "directoryObject.servicePrincipal"
+        },
+        {
+            "name": "directoryObject.user"
+        },
+        {
+            "name": "applications.tokenIssuancePolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "applications.tokenLifetimePolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "applications.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "applicationTemplates.applicationTemplate",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "applicationTemplates.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "auditLogs.auditLogRoot",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "auditLogs.directoryAudit",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "auditLogs.provisioningObjectSummary",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "auditLogs.signIn",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "authenticationMethodConfigurations.authenticationMethodConfiguration",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "authenticationMethodsPolicy.authenticationMethodsPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "authenticationMethodsPolicy.authenticationMethodConfiguration",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "branding.organizationalBranding",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "branding.organizationalBrandingLocalization",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "certificateBasedAuthConfiguration.certificateBasedAuthConfiguration",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "chats.chat",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "chats.teamsAppInstallation",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "chats.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "chats.chatMessageInfo",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "chats.conversationMember",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "chats.chatMessage",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "chats.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "chats.pinnedChatMessageInfo",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "chats.teamsTab",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "communications.cloudCommunications",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "communications.callRecord",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "communications.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "communications.call",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "communications.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "communications.onlineMeeting",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "communications.presence",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "compliance.compliance",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "connections.externalConnection",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "connections.externalGroup",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "connections.externalItem",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "connections.connectionOperation",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "connections.schema",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "contacts.orgContact",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "contacts.directoryObject",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "directoryObject.orgContact"
+        },
+        {
+            "name": "directoryObject.administrativeUnit"
+        },
+        {
+            "name": "directoryObject.group"
+        },
+        {
+            "name": "contacts.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "contacts.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "contracts.contract",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "contracts.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "contracts.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "dataPolicyOperations.dataPolicyOperation",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.deviceAppManagement",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.androidManagedAppProtection",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.defaultManagedAppProtection",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.iosManagedAppProtection",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.managedAppPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "deviceAppManagement.managedAppRegistration",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "deviceAppManagement.managedAppStatus",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.managedEBook",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.mdmWindowsInformationProtectionPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.mobileAppCategory",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.managedDeviceMobileAppConfiguration",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.mobileApp",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "mobileApp.managedMobileLobApp"
+        },
+        {
+            "name": "mobileApp.mobileLobApp"
+        },
+        {
+            "name": "deviceAppManagement.targetedManagedAppConfiguration",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.vppToken",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceAppManagement.windowsInformationProtectionPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.deviceManagement",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.applePushNotificationCertificate",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "deviceManagement.auditEvent",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.complianceManagementPartner",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.onPremisesConditionalAccessSettings",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.detectedApp",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.deviceCategory",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.deviceCompliancePolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "deviceManagement.deviceCompliancePolicyDeviceStateSummary",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.deviceCompliancePolicySettingStateSummary",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.deviceConfigurationDeviceStateSummary",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.deviceConfiguration",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.deviceEnrollmentConfiguration",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.deviceManagementPartner",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.deviceManagementExchangeConnector",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.importedWindowsAutopilotDeviceIdentity",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.iosUpdateDeviceStatus",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.managedDeviceOverview",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.managedDevice",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.mobileThreatDefenseConnector",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.notificationMessageTemplate",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.remoteAssistancePartner",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.deviceManagementReports",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.resourceOperation",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.deviceAndAppManagementRoleAssignment",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.roleDefinition",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.softwareUpdateStatusSummary",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.telecomExpenseManagementPartner",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.termsAndConditions",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.deviceManagementTroubleshootingEvent",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.windowsAutopilotDeviceIdentity",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.windowsInformationProtectionAppLearningSummary",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "deviceManagement.windowsInformationProtectionNetworkLearningSummary",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "devices.device",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "devices.extension",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "devices.directoryObject",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "devices.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "devices.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "directory.directory",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "directory.administrativeUnit",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "directoryObject.application"
+        },
+        {
+            "name": "directoryObject.device"
+        },
+        {
+            "name": "directory.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "directory.directoryObject",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "directory.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "directory.identityProviderBase",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "directory.onPremisesDirectorySynchronization",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "directoryObjects.directoryObject",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "directoryObjects.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "directoryObjects.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "directoryRoles.directoryRole",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "directoryRoles.directoryObject",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "directoryRoles.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "directoryRoles.scopedRoleMembership",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "directoryRoles.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "directoryRoleTemplates.directoryRoleTemplate",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "directoryRoleTemplates.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "directoryRoleTemplates.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "domainDnsRecords.domainDnsRecord",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "domains.domain",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "domains.directoryObject",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "domains.internalDomainFederation",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "domains.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "domains.domainDnsRecord",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "drives.drive",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "drives.driveItem",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "drives.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "drives.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "drives.list",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "education.educationRoot",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "education.educationClass",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "education.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "education.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "education.educationUser",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "education.educationSchool",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "employeeExperience.employeeExperience",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "employeeExperience.learningProvider",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "external.external",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "external.externalConnection",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groupLifecyclePolicies.groupLifecyclePolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groupLifecyclePolicies.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "groups.group",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.directoryObject",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.appRoleAssignment",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.calendar",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "groups.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "groups.event",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.conversation",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.drive",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.extension",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.groupLifecyclePolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.onenote",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.resourceSpecificPermissionGrant",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.profilePhoto",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.plannerGroup",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.groupSetting",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.site",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.team",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groups.conversationThread",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groupSettings.groupSetting",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groupSettingTemplates.groupSettingTemplate",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "groupSettingTemplates.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "groupSettingTemplates.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "identity.identityContainer",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identity.identityApiConnector",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identity.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "identity.b2xIdentityUserFlow",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identity.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "identity.conditionalAccessRoot",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identity.identityProviderBase",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identity.identityUserFlowAttribute",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identityGovernance.identityGovernance",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identityGovernance.accessReviewSet",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identityGovernance.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "identityGovernance.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "identityGovernance.appConsentApprovalRoute",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identityGovernance.entitlementManagement",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identityGovernance.termsOfUseContainer",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identityProtection.identityProtectionRoot",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identityProtection.riskDetection",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identityProtection.riskyServicePrincipal",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identityProtection.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "identityProtection.riskyUser",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identityProtection.servicePrincipalRiskDetection",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identityProviders.identityProvider",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "identityProviders.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "informationProtection.informationProtection",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "informationProtection.bitlocker",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "informationProtection.threatAssessmentRequest",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "invitations.invitation",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "invitations.user",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "localizations.organizationalBrandingLocalization",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.user",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.userActivity",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "me.agreementAcceptance",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.appRoleAssignment",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.authentication",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "me.calendar",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.calendarGroup",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.event",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.chat",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.contactFolder",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.contact",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.directoryObject",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.deviceManagementTroubleshootingEvent",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.drive",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.extension",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.site",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.inferenceClassification",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.officeGraphInsights",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.team",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.licenseDetails",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.mailFolder",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.managedAppRegistration",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.managedDevice",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.message",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.oAuth2PermissionGrant",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.onenote",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.onlineMeeting",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.outlookUser",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.person",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.profilePhoto",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.plannerUser",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.presence",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.scopedRoleMembership",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.userSettings",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.userTeamwork",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "me.todo",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "oauth2PermissionGrants.oAuth2PermissionGrant",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "oauth2PermissionGrants.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "organization.organization",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "organization.organizationalBranding",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "organization.certificateBasedAuthConfiguration",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "organization.extension",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "organization.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "organization.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "permissionGrants.resourceSpecificPermissionGrant",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "permissionGrants.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "permissionGrants.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "places.place",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "place.room"
+        },
+        {
+            "name": "planner.planner",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "planner.plannerBucket",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "planner.plannerPlan",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "planner.plannerTask",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.policyRoot",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.activityBasedTimeoutPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.adminConsentRequestPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.appManagementPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.authenticationFlowsPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.authenticationMethodsPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.authorizationPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.claimsMappingPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.conditionalAccessPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.crossTenantAccessPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "policies.tenantAppManagementPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.featureRolloutPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "policies.homeRealmDiscoveryPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.identitySecurityDefaultsEnforcementPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.permissionGrantPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.unifiedRoleManagementPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.unifiedRoleManagementPolicyAssignment",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.tokenIssuancePolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.tokenLifetimePolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "print.print",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "print.printConnector",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "print.printOperation",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "print.printer",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "print.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "print.printService",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "print.printerShare",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "print.printTaskDefinition",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "privacy.privacy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "privacy.subjectRightsRequest",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "privacy.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "reports.reportRoot",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "reports.printUsageByPrinter",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "reports.printUsageByUser",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "reports.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "reports.securityReportsRoot",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "roleManagement.roleManagement",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "roleManagement.rbacApplication",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "roleManagement.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "roleManagement.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "schemaExtensions.schemaExtension",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "scopedRoleMemberships.scopedRoleMembership",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "search.searchEntity",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "search.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "security.security",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "security.alert",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "security.attackSimulationRoot",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "security.casesRoot",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "security.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "security.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "security.incident",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "security.secureScoreControlProfile",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "security.secureScore",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "servicePrincipals.servicePrincipal",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "servicePrincipals.appManagementPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "servicePrincipals.appRoleAssignment",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "servicePrincipals.claimsMappingPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "servicePrincipals.directoryObject",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "servicePrincipals.delegatedPermissionClassification",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "servicePrincipals.endpoint",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "servicePrincipals.federatedIdentityCredential",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "servicePrincipals.homeRealmDiscoveryPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "servicePrincipals.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "servicePrincipals.oAuth2PermissionGrant",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "servicePrincipals.tokenIssuancePolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "servicePrincipals.tokenLifetimePolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "servicePrincipals.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "shares.sharedDriveItem",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "shares.driveItem",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "shares.list",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "shares.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "shares.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "shares.listItem",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "shares.permission",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "shares.site",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "sites.site",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "sites.itemAnalytics",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "sites.columnDefinition",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "sites.contentType",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "sites.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "sites.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "sites.drive",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "sites.baseItem",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "sites.list",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "sites.onenote",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "sites.richLongRunningOperation",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "sites.permission",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "sites.store",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "solutions.solutionsRoot",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "solutions.bookingBusiness",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "solutions.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "solutions.bookingCurrency",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "subscribedSkus.subscribedSku",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "subscriptions.subscription",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "subscriptions.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "teams.team",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "teams.channel",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "teams.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "teams.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "teams.group",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "teams.teamsAppInstallation",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "teams.conversationMember",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "teams.teamsAsyncOperation",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "teams.profilePhoto",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "teams.schedule",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "teams.teamworkTag",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "teams.teamsTemplate",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "teamsTemplates.teamsTemplate",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "teamwork.teamwork",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "teamwork.deletedTeam",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "teamwork.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "teamwork.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "teamwork.workforceIntegration",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "tenantRelationships.tenantRelationship",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "tenantRelationships.delegatedAdminCustomer",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "tenantRelationships.delegatedAdminRelationship",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.user",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.userActivity",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "users.agreementAcceptance",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.appRoleAssignment",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.authentication",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "users.calendar",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.calendarGroup",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.event",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.chat",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.contactFolder",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.contact",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.directoryObject",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.deviceManagementTroubleshootingEvent",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.drive",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.extension",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.site",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.inferenceClassification",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.officeGraphInsights",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.team",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.licenseDetails",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.mailFolder",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.managedAppRegistration",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.managedDevice",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.message",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.oAuth2PermissionGrant",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.onenote",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.onlineMeeting",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.outlookUser",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.person",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.profilePhoto",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.plannerUser",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.presence",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.scopedRoleMembership",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.userSettings",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.userTeamwork",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.todo",
+            "x-ms-docs-toc-type": "page"
         }
-    }
+    ]
 }
