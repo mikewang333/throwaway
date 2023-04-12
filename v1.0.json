@@ -1085,6 +1085,142 @@
                 }
             }
         },
+        "/me/chats": {
+            "description": "Provides operations to manage the chats property of the microsoft.graph.user entity.",
+            "get": {
+                "tags": [
+                    "me.chat"
+                ],
+                "summary": "List chats",
+                "description": "Retrieve the list of chats that the user is part of. This method supports federation. When a user ID is provided, the calling application must belong to the same tenant that the user belongs to.",
+                "externalDocs": {
+                    "description": "Find more info here",
+                    "url": "https://docs.microsoft.com/graph/api/chat-list?view=graph-rest-1.0"
+                },
+                "operationId": "me.ListChats",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/top"
+                    },
+                    {
+                        "$ref": "#/components/parameters/skip"
+                    },
+                    {
+                        "$ref": "#/components/parameters/search"
+                    },
+                    {
+                        "$ref": "#/components/parameters/filter"
+                    },
+                    {
+                        "$ref": "#/components/parameters/count"
+                    },
+                    {
+                        "name": "$orderby",
+                        "in": "query",
+                        "description": "Order items by property values",
+                        "style": "form",
+                        "explode": false,
+                        "schema": {
+                            "uniqueItems": true,
+                            "type": "array",
+                            "items": {
+                                "enum": [
+                                    "id",
+                                    "id desc",
+                                    "chatType",
+                                    "chatType desc",
+                                    "createdDateTime",
+                                    "createdDateTime desc",
+                                    "lastUpdatedDateTime",
+                                    "lastUpdatedDateTime desc",
+                                    "onlineMeetingInfo",
+                                    "onlineMeetingInfo desc",
+                                    "tenantId",
+                                    "tenantId desc",
+                                    "topic",
+                                    "topic desc",
+                                    "viewpoint",
+                                    "viewpoint desc",
+                                    "webUrl",
+                                    "webUrl desc"
+                                ],
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "name": "$select",
+                        "in": "query",
+                        "description": "Select properties to be returned",
+                        "style": "form",
+                        "explode": false,
+                        "schema": {
+                            "uniqueItems": true,
+                            "type": "array",
+                            "items": {
+                                "enum": [
+                                    "id",
+                                    "chatType",
+                                    "createdDateTime",
+                                    "lastUpdatedDateTime",
+                                    "onlineMeetingInfo",
+                                    "tenantId",
+                                    "topic",
+                                    "viewpoint",
+                                    "webUrl",
+                                    "installedApps",
+                                    "lastMessagePreview",
+                                    "members",
+                                    "messages",
+                                    "pinnedMessages",
+                                    "tabs"
+                                ],
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "name": "$expand",
+                        "in": "query",
+                        "description": "Expand related entities",
+                        "style": "form",
+                        "explode": false,
+                        "schema": {
+                            "uniqueItems": true,
+                            "type": "array",
+                            "items": {
+                                "enum": [
+                                    "*",
+                                    "installedApps",
+                                    "lastMessagePreview",
+                                    "members",
+                                    "messages",
+                                    "pinnedMessages",
+                                    "tabs"
+                                ],
+                                "type": "string"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "2XX": {
+                        "$ref": "#/components/responses/microsoft.graph.chatCollectionResponse"
+                    },
+                    "4XX": {
+                        "$ref": "#/components/responses/error"
+                    },
+                    "5XX": {
+                        "$ref": "#/components/responses/error"
+                    }
+                },
+                "x-ms-pageable": {
+                    "nextLinkName": "@odata.nextLink",
+                    "operationName": "listMore"
+                },
+                "x-ms-docs-operation-type": "operation"
+            }
+        },
         "/me/joinedTeams": {
             "description": "Provides operations to manage the joinedTeams property of the microsoft.graph.user entity.",
             "get": {
