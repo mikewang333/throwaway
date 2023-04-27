@@ -199,12 +199,8 @@
                 "tags": [
                     "chats.conversationMember"
                 ],
-                "summary": "List members of a chat",
-                "description": "List all conversation members in a chat. This method supports federation. For one-on-one chats, at least one chat member must belong to the tenant the request initiates from. For group chats, the chat must be initiated by a user in the tenant the request initiates from.",
-                "externalDocs": {
-                    "description": "Find more info here",
-                    "url": "https://docs.microsoft.com/graph/api/chat-list-members?view=graph-rest-1.0"
-                },
+                "summary": "Get members from chats",
+                "description": "A collection of all the members in the chat. Nullable.",
                 "operationId": "chats.ListMembers",
                 "parameters": [
                     {
@@ -305,12 +301,7 @@
                 "tags": [
                     "chats.conversationMember"
                 ],
-                "summary": "Add member to a chat",
-                "description": "Add a conversationMember to a chat.",
-                "externalDocs": {
-                    "description": "Find more info here",
-                    "url": "https://docs.microsoft.com/graph/api/chat-post-members?view=graph-rest-1.0"
-                },
+                "summary": "Create new navigation property to members for chats",
                 "operationId": "chats.CreateMembers",
                 "requestBody": {
                     "description": "New navigation property",
@@ -519,12 +510,8 @@
                 "tags": [
                     "chats.chatMessage"
                 ],
-                "summary": "List messages in a chat",
-                "description": "Retrieve the list of messages in a chat. This method supports federation. To list chat messages in application context, the request must be made from the tenant that the channel owner belongs to (represented by the **tenantId** property on the channel).",
-                "externalDocs": {
-                    "description": "Find more info here",
-                    "url": "https://docs.microsoft.com/graph/api/chat-list-messages?view=graph-rest-1.0"
-                },
+                "summary": "Get messages from chats",
+                "description": "A collection of all the messages in the chat. Nullable.",
                 "operationId": "chats.ListMessages",
                 "parameters": [
                     {
@@ -583,6 +570,8 @@
                                     "locale desc",
                                     "mentions",
                                     "mentions desc",
+                                    "messageHistory",
+                                    "messageHistory desc",
                                     "messageType",
                                     "messageType desc",
                                     "policyViolation",
@@ -628,6 +617,7 @@
                                     "lastModifiedDateTime",
                                     "locale",
                                     "mentions",
+                                    "messageHistory",
                                     "messageType",
                                     "policyViolation",
                                     "reactions",
@@ -683,12 +673,7 @@
                 "tags": [
                     "chats.chatMessage"
                 ],
-                "summary": "Send chatMessage in a channel or a chat",
-                "description": "Send a new chatMessage in the specified channel or a chat.",
-                "externalDocs": {
-                    "description": "Find more info here",
-                    "url": "https://docs.microsoft.com/graph/api/chatmessage-post?view=graph-rest-1.0"
-                },
+                "summary": "Create new navigation property to messages for chats",
                 "operationId": "chats.CreateMessages",
                 "requestBody": {
                     "description": "New navigation property",
@@ -770,6 +755,7 @@
                                     "lastModifiedDateTime",
                                     "locale",
                                     "mentions",
+                                    "messageHistory",
                                     "messageType",
                                     "policyViolation",
                                     "reactions",
@@ -919,12 +905,7 @@
                 "tags": [
                     "me.team"
                 ],
-                "summary": "List joinedTeams",
-                "description": "Get the teams in Microsoft Teams that the user is a direct member of.",
-                "externalDocs": {
-                    "description": "Find more info here",
-                    "url": "https://docs.microsoft.com/graph/api/user-list-joinedteams?view=graph-rest-1.0"
-                },
+                "summary": "Get joinedTeams from me",
                 "operationId": "me.ListJoinedTeams",
                 "parameters": [
                     {
@@ -1295,12 +1276,8 @@
                 "tags": [
                     "teams.channel"
                 ],
-                "summary": "List allChannels",
-                "description": "Get the list of channels either in this team or shared with this team (incoming channels).",
-                "externalDocs": {
-                    "description": "Find more info here",
-                    "url": "https://docs.microsoft.com/graph/api/team-list-allchannels?view=graph-rest-1.0"
-                },
+                "summary": "Get allChannels from teams",
+                "description": "List of channels either hosted in or shared with the team (incoming channels).",
                 "operationId": "teams.ListAllChannels",
                 "parameters": [
                     {
@@ -1547,12 +1524,8 @@
                 "tags": [
                     "teams.channel"
                 ],
-                "summary": "List channels",
-                "description": "Retrieve the list of channels in this team.",
-                "externalDocs": {
-                    "description": "Find more info here",
-                    "url": "https://docs.microsoft.com/graph/api/channel-list?view=graph-rest-1.0"
-                },
+                "summary": "Get channels from teams",
+                "description": "The collection of channels and messages associated with the team.",
                 "operationId": "teams.ListChannels",
                 "parameters": [
                     {
@@ -1678,12 +1651,7 @@
                 "tags": [
                     "teams.channel"
                 ],
-                "summary": "Create channel",
-                "description": "Create a new channel in a team, as specified in the request body.  When you create a channel, the maximum length of the channel's `displayName` is 50 characters. This is the name that appears to the user in Microsoft Teams. If you're creating a private channel, you can add a maximum of 200 members.",
-                "externalDocs": {
-                    "description": "Find more info here",
-                    "url": "https://docs.microsoft.com/graph/api/channel-post?view=graph-rest-1.0"
-                },
+                "summary": "Create new navigation property to channels for teams",
                 "operationId": "teams.CreateChannels",
                 "requestBody": {
                     "description": "New navigation property",
@@ -1870,12 +1838,8 @@
                 "tags": [
                     "teams.channel"
                 ],
-                "summary": "List members of a channel",
-                "description": "Retrieve a list of conversationMembers from a channel. This method supports federation. Only a user who is a member of the shared channel can retrieve the channel member list.",
-                "externalDocs": {
-                    "description": "Find more info here",
-                    "url": "https://docs.microsoft.com/graph/api/channel-list-members?view=graph-rest-1.0"
-                },
+                "summary": "Get members from teams",
+                "description": "A collection of membership records associated with the channel.",
                 "operationId": "teams.channels.ListMembers",
                 "parameters": [
                     {
@@ -1976,12 +1940,7 @@
                 "tags": [
                     "teams.channel"
                 ],
-                "summary": "Add member to channel",
-                "description": "Add a conversationMember to a channel. This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.",
-                "externalDocs": {
-                    "description": "Find more info here",
-                    "url": "https://docs.microsoft.com/graph/api/channel-post-members?view=graph-rest-1.0"
-                },
+                "summary": "Create new navigation property to members for teams",
                 "operationId": "teams.channels.CreateMembers",
                 "requestBody": {
                     "description": "New navigation property",
@@ -2216,12 +2175,8 @@
                 "tags": [
                     "teams.channel"
                 ],
-                "summary": "List channel messages",
-                "description": "Retrieve the list of messages (without the replies) in a channel of a team.  To get the replies for a message, call the list message replies or the get message reply API.  This method supports federation. To list channel messages in application context, the request must be made from the tenant that the channel owner belongs to (represented by the **tenantId** property on the channel).",
-                "externalDocs": {
-                    "description": "Find more info here",
-                    "url": "https://docs.microsoft.com/graph/api/channel-list-messages?view=graph-rest-1.0"
-                },
+                "summary": "Get messages from teams",
+                "description": "A collection of all the messages in the channel. A navigation property. Nullable.",
                 "operationId": "teams.channels.ListMessages",
                 "parameters": [
                     {
@@ -2280,6 +2235,8 @@
                                     "locale desc",
                                     "mentions",
                                     "mentions desc",
+                                    "messageHistory",
+                                    "messageHistory desc",
                                     "messageType",
                                     "messageType desc",
                                     "policyViolation",
@@ -2325,6 +2282,7 @@
                                     "lastModifiedDateTime",
                                     "locale",
                                     "mentions",
+                                    "messageHistory",
                                     "messageType",
                                     "policyViolation",
                                     "reactions",
@@ -2380,12 +2338,7 @@
                 "tags": [
                     "teams.channel"
                 ],
-                "summary": "Send chatMessage in channel",
-                "description": "Send a new chatMessage in the specified channel.",
-                "externalDocs": {
-                    "description": "Find more info here",
-                    "url": "https://docs.microsoft.com/graph/api/channel-post-messages?view=graph-rest-1.0"
-                },
+                "summary": "Create new navigation property to messages for teams",
                 "operationId": "teams.channels.CreateMessages",
                 "requestBody": {
                     "description": "New navigation property",
@@ -2480,6 +2433,7 @@
                                     "lastModifiedDateTime",
                                     "locale",
                                     "mentions",
+                                    "messageHistory",
                                     "messageType",
                                     "policyViolation",
                                     "reactions",
@@ -2705,6 +2659,8 @@
                         "#microsoft.graph.federatedIdentityCredential": "#/components/schemas/microsoft.graph.federatedIdentityCredential",
                         "#microsoft.graph.applicationTemplate": "#/components/schemas/microsoft.graph.applicationTemplate",
                         "#microsoft.graph.delegatedPermissionClassification": "#/components/schemas/microsoft.graph.delegatedPermissionClassification",
+                        "#microsoft.graph.authenticationCombinationConfiguration": "#/components/schemas/microsoft.graph.authenticationCombinationConfiguration",
+                        "#microsoft.graph.fido2CombinationConfiguration": "#/components/schemas/microsoft.graph.fido2CombinationConfiguration",
                         "#microsoft.graph.authenticationMethodConfiguration": "#/components/schemas/microsoft.graph.authenticationMethodConfiguration",
                         "#microsoft.graph.emailAuthenticationMethodConfiguration": "#/components/schemas/microsoft.graph.emailAuthenticationMethodConfiguration",
                         "#microsoft.graph.fido2AuthenticationMethodConfiguration": "#/components/schemas/microsoft.graph.fido2AuthenticationMethodConfiguration",
@@ -2714,15 +2670,24 @@
                         "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration": "#/components/schemas/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
                         "#microsoft.graph.voiceAuthenticationMethodConfiguration": "#/components/schemas/microsoft.graph.voiceAuthenticationMethodConfiguration",
                         "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration": "#/components/schemas/microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
+                        "#microsoft.graph.authenticationMethodModeDetail": "#/components/schemas/microsoft.graph.authenticationMethodModeDetail",
                         "#microsoft.graph.authenticationMethodsPolicy": "#/components/schemas/microsoft.graph.authenticationMethodsPolicy",
                         "#microsoft.graph.authenticationMethodTarget": "#/components/schemas/microsoft.graph.authenticationMethodTarget",
                         "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodTarget": "#/components/schemas/microsoft.graph.microsoftAuthenticatorAuthenticationMethodTarget",
                         "#microsoft.graph.smsAuthenticationMethodTarget": "#/components/schemas/microsoft.graph.smsAuthenticationMethodTarget",
+                        "#microsoft.graph.authenticationStrengthPolicy": "#/components/schemas/microsoft.graph.authenticationStrengthPolicy",
+                        "#microsoft.graph.authenticationStrengthRoot": "#/components/schemas/microsoft.graph.authenticationStrengthRoot",
+                        "#microsoft.graph.conditionalAccessRoot": "#/components/schemas/microsoft.graph.conditionalAccessRoot",
+                        "#microsoft.graph.authenticationContextClassReference": "#/components/schemas/microsoft.graph.authenticationContextClassReference",
+                        "#microsoft.graph.namedLocation": "#/components/schemas/microsoft.graph.namedLocation",
+                        "#microsoft.graph.countryNamedLocation": "#/components/schemas/microsoft.graph.countryNamedLocation",
+                        "#microsoft.graph.ipNamedLocation": "#/components/schemas/microsoft.graph.ipNamedLocation",
+                        "#microsoft.graph.conditionalAccessPolicy": "#/components/schemas/microsoft.graph.conditionalAccessPolicy",
+                        "#microsoft.graph.conditionalAccessTemplate": "#/components/schemas/microsoft.graph.conditionalAccessTemplate",
                         "#microsoft.graph.policyRoot": "#/components/schemas/microsoft.graph.policyRoot",
                         "#microsoft.graph.authenticationFlowsPolicy": "#/components/schemas/microsoft.graph.authenticationFlowsPolicy",
                         "#microsoft.graph.featureRolloutPolicy": "#/components/schemas/microsoft.graph.featureRolloutPolicy",
                         "#microsoft.graph.adminConsentRequestPolicy": "#/components/schemas/microsoft.graph.adminConsentRequestPolicy",
-                        "#microsoft.graph.conditionalAccessPolicy": "#/components/schemas/microsoft.graph.conditionalAccessPolicy",
                         "#microsoft.graph.unifiedRoleManagementPolicy": "#/components/schemas/microsoft.graph.unifiedRoleManagementPolicy",
                         "#microsoft.graph.unifiedRoleManagementPolicyAssignment": "#/components/schemas/microsoft.graph.unifiedRoleManagementPolicyAssignment",
                         "#microsoft.graph.bitlocker": "#/components/schemas/microsoft.graph.bitlocker",
@@ -2790,11 +2755,13 @@
                         "#microsoft.graph.identityBuiltInUserFlowAttribute": "#/components/schemas/microsoft.graph.identityBuiltInUserFlowAttribute",
                         "#microsoft.graph.identityCustomUserFlowAttribute": "#/components/schemas/microsoft.graph.identityCustomUserFlowAttribute",
                         "#microsoft.graph.identityContainer": "#/components/schemas/microsoft.graph.identityContainer",
-                        "#microsoft.graph.conditionalAccessRoot": "#/components/schemas/microsoft.graph.conditionalAccessRoot",
                         "#microsoft.graph.userFlowLanguagePage": "#/components/schemas/microsoft.graph.userFlowLanguagePage",
+                        "#microsoft.graph.allowedValue": "#/components/schemas/microsoft.graph.allowedValue",
                         "#microsoft.graph.appScope": "#/components/schemas/microsoft.graph.appScope",
+                        "#microsoft.graph.attributeSet": "#/components/schemas/microsoft.graph.attributeSet",
                         "#microsoft.graph.certificateBasedAuthConfiguration": "#/components/schemas/microsoft.graph.certificateBasedAuthConfiguration",
                         "#microsoft.graph.crossTenantAccessPolicyConfigurationDefault": "#/components/schemas/microsoft.graph.crossTenantAccessPolicyConfigurationDefault",
+                        "#microsoft.graph.customSecurityAttributeDefinition": "#/components/schemas/microsoft.graph.customSecurityAttributeDefinition",
                         "#microsoft.graph.directory": "#/components/schemas/microsoft.graph.directory",
                         "#microsoft.graph.onPremisesDirectorySynchronization": "#/components/schemas/microsoft.graph.onPremisesDirectorySynchronization",
                         "#microsoft.graph.domain": "#/components/schemas/microsoft.graph.domain",
@@ -2947,11 +2914,6 @@
                         "#microsoft.graph.agreementFile": "#/components/schemas/microsoft.graph.agreementFile",
                         "#microsoft.graph.agreementFileLocalization": "#/components/schemas/microsoft.graph.agreementFileLocalization",
                         "#microsoft.graph.agreementFileVersion": "#/components/schemas/microsoft.graph.agreementFileVersion",
-                        "#microsoft.graph.authenticationContextClassReference": "#/components/schemas/microsoft.graph.authenticationContextClassReference",
-                        "#microsoft.graph.namedLocation": "#/components/schemas/microsoft.graph.namedLocation",
-                        "#microsoft.graph.countryNamedLocation": "#/components/schemas/microsoft.graph.countryNamedLocation",
-                        "#microsoft.graph.ipNamedLocation": "#/components/schemas/microsoft.graph.ipNamedLocation",
-                        "#microsoft.graph.conditionalAccessTemplate": "#/components/schemas/microsoft.graph.conditionalAccessTemplate",
                         "#microsoft.graph.riskDetection": "#/components/schemas/microsoft.graph.riskDetection",
                         "#microsoft.graph.riskyServicePrincipal": "#/components/schemas/microsoft.graph.riskyServicePrincipal",
                         "#microsoft.graph.riskyServicePrincipalHistoryItem": "#/components/schemas/microsoft.graph.riskyServicePrincipalHistoryItem",
@@ -4100,6 +4062,17 @@
                                     ]
                                 },
                                 "description": "List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel."
+                            },
+                            "messageHistory": {
+                                "type": "array",
+                                "items": {
+                                    "anyOf": [
+                                        {
+                                            "type": "object",
+                                            "nullable": true
+                                        }
+                                    ]
+                                }
                             },
                             "messageType": {
                                 "$ref": "#/components/schemas/microsoft.graph.chatMessageType"
@@ -5257,6 +5230,14 @@
             "x-ms-docs-toc-type": "container"
         },
         {
+            "name": "directory.attributeSet",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "directory.customSecurityAttributeDefinition",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
             "name": "directory.directoryObject",
             "x-ms-docs-toc-type": "page"
         },
@@ -5705,6 +5686,10 @@
             "x-ms-docs-toc-type": "page"
         },
         {
+            "name": "me.mailboxSettings",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
             "name": "me.mailFolder",
             "x-ms-docs-toc-type": "page"
         },
@@ -5857,6 +5842,18 @@
             "x-ms-docs-toc-type": "page"
         },
         {
+            "name": "policies.authenticationStrengthPolicy",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "policies.Actions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
+            "name": "policies.Functions",
+            "x-ms-docs-toc-type": "container"
+        },
+        {
             "name": "policies.authorizationPolicy",
             "x-ms-docs-toc-type": "page"
         },
@@ -5873,20 +5870,12 @@
             "x-ms-docs-toc-type": "page"
         },
         {
-            "name": "policies.Actions",
-            "x-ms-docs-toc-type": "container"
-        },
-        {
             "name": "policies.tenantAppManagementPolicy",
             "x-ms-docs-toc-type": "page"
         },
         {
             "name": "policies.featureRolloutPolicy",
             "x-ms-docs-toc-type": "page"
-        },
-        {
-            "name": "policies.Functions",
-            "x-ms-docs-toc-type": "container"
         },
         {
             "name": "policies.homeRealmDiscoveryPolicy",
@@ -6394,6 +6383,10 @@
         },
         {
             "name": "users.licenseDetails",
+            "x-ms-docs-toc-type": "page"
+        },
+        {
+            "name": "users.mailboxSettings",
             "x-ms-docs-toc-type": "page"
         },
         {
