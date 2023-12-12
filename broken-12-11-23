@@ -1,0 +1,3695 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "",
+    "description": "",
+    "version": ""
+  },
+  "servers": [
+    {
+      "url": "http://localhost/",
+      "description": "Current Environment"
+    }
+  ],
+  "paths": {
+    "/v1/offers/{uuid}/request": {
+      "get": {
+        "tags": [
+          "offers",
+          "request"
+        ],
+        "summary": "Read Offers Application",
+        "description": "Display the stored offers request",
+        "operationId": "read_offers_application_v1_offers__uuid__request_get",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QualEngineRequestSchema-Output"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/offers/{uuid}/explain": {
+      "post": {
+        "tags": [
+          "offers",
+          "explain"
+        ],
+        "summary": "Post Request Explanation",
+        "operationId": "post_request_explanation_v1_offers__uuid__explain_post",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "offers",
+          "explain"
+        ],
+        "summary": "Read Offers Explanation",
+        "operationId": "read_offers_explanation_v1_offers__uuid__explain_get",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/offers/{uuid}": {
+      "get": {
+        "tags": [
+          "offers"
+        ],
+        "summary": "Read Offers",
+        "description": "Read back the stored offers.",
+        "operationId": "read_offers_v1_offers__uuid__get",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QualEngineResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/offers": {
+      "post": {
+        "tags": [
+          "offers"
+        ],
+        "summary": "Create Offers",
+        "description": "Where the magic happens. Accepts an application and returns rates and approvals per lender.",
+        "operationId": "create_offers_v1_offers_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QualEngineRequestSchema-Input"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QualEngineResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ]
+      }
+    },
+    "/v1/offer/{uuid}/request": {
+      "get": {
+        "tags": [
+          "offer",
+          "request"
+        ],
+        "summary": "Read Offer Application",
+        "description": "Display the stored offers request",
+        "operationId": "read_offer_application_v1_offer__uuid__request_get",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QualEngineRequestSchema-Output"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/offer/{uuid}/explain": {
+      "get": {
+        "tags": [
+          "offer",
+          "explain"
+        ],
+        "summary": "Read Offer Explanation",
+        "operationId": "read_offer_explanation_v1_offer__uuid__explain_get",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/offer/{uuid}": {
+      "get": {
+        "tags": [
+          "offer"
+        ],
+        "summary": "Read Offer",
+        "description": "Display a flattened version of a specific term offer",
+        "operationId": "read_offer_v1_offer__uuid__get",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LenderOfferResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/lender/{uuid}/hardcuts": {
+      "get": {
+        "tags": [
+          "lender",
+          "hardcuts"
+        ],
+        "summary": "Read Hardcuts",
+        "description": "Displays the ruleset for lenender_config row",
+        "operationId": "read_hardcuts_v1_lender__uuid__hardcuts_get",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HardcutsSchema-Output"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "lender",
+          "hardcuts"
+        ],
+        "summary": "Update Hardcuts",
+        "description": "Updates the ruleset on lender_config",
+        "operationId": "update_hardcuts_v1_lender__uuid__hardcuts_put",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HardcutsSchema-Input"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HardcutsSchema-Output"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "lender",
+          "hardcuts"
+        ],
+        "summary": "Delete Hardcuts",
+        "description": "Removes the ruleset from the lender_config row",
+        "operationId": "delete_hardcuts_v1_lender__uuid__hardcuts_delete",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/lender": {
+      "get": {
+        "tags": [
+          "lender"
+        ],
+        "summary": "Read Lenders",
+        "operationId": "read_lenders_v1_lender_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LendersListOutputSchema"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "lender"
+        ],
+        "summary": "Create Lender",
+        "description": "Creates lender_config record",
+        "operationId": "create_lender_v1_lender_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LenderInputSchema"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LenderOutputSchema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ]
+      }
+    },
+    "/v1/lender/{uuid}": {
+      "get": {
+        "tags": [
+          "lender"
+        ],
+        "summary": "Read Lender",
+        "description": "Displays lender record",
+        "operationId": "read_lender_v1_lender__uuid__get",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LenderOutputSchema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "lender"
+        ],
+        "summary": "Update Lender",
+        "description": "Updates a lender",
+        "operationId": "update_lender_v1_lender__uuid__put",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LenderInputSchema"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LenderOutputSchema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "lender"
+        ],
+        "summary": "Delete Lender",
+        "description": "Deactivates a lender",
+        "operationId": "delete_lender_v1_lender__uuid__delete",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/account": {
+      "get": {
+        "tags": [
+          "account"
+        ],
+        "summary": "Show Accounts",
+        "operationId": "show_accounts_v1_account_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/AccountSchema"
+                  },
+                  "type": "array",
+                  "title": "Response Show Accounts V1 Account Get"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "account"
+        ],
+        "summary": "Create Account",
+        "operationId": "create_account_v1_account_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewAccountSchema"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AccountSchema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ]
+      }
+    },
+    "/v1/account/{uuid}": {
+      "get": {
+        "tags": [
+          "account"
+        ],
+        "summary": "Show Account",
+        "operationId": "show_account_v1_account__uuid__get",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AccountSchema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "account"
+        ],
+        "summary": "Update Account",
+        "operationId": "update_account_v1_account__uuid__put",
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewAccountSchema"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/stats": {
+      "get": {
+        "summary": "Get Stats",
+        "description": "This is mainly to make sure that the db is working and storing records",
+        "operationId": "get_stats_v1_stats_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "JWTBearer": []
+          }
+        ]
+      }
+    },
+    "/auth": {
+      "post": {
+        "summary": "Authenticate Internal Client",
+        "description": "Returns a Bearer token for the internal account",
+        "operationId": "authenticate_internal_client_auth_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IdpTokenSchema"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBasic": []
+          }
+        ]
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "Health Check",
+        "operationId": "health_check__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AccountConfig": {
+        "properties": {
+          "payload_overrides": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/PayloadOverrides"
+              }
+            ],
+            "default": {
+              "application": {},
+              "modifiers": {}
+            }
+          }
+        },
+        "type": "object",
+        "title": "AccountConfig"
+      },
+      "AccountSchema": {
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "title": "Uuid"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "type": {
+            "$ref": "#/components/schemas/AccountTypeEnum"
+          },
+          "configuration": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AccountConfig"
+              }
+            ],
+            "default": {
+              "payload_overrides": {
+                "application": {},
+                "modifiers": {}
+              }
+            }
+          },
+          "client_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Client Id"
+          },
+          "usage_plan": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Usage Plan"
+          },
+          "scopes": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true,
+            "title": "Scopes"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "updated_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Updated At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "uuid",
+          "name",
+          "type",
+          "created_at"
+        ],
+        "title": "AccountSchema"
+      },
+      "AccountTypeEnum": {
+        "type": "string",
+        "enum": [
+          "INTERNAL",
+          "PARTNER"
+        ],
+        "title": "AccountTypeEnum"
+      },
+      "Address": {
+        "properties": {
+          "state": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/StateEnum"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "city": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "City"
+          },
+          "zip": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Zip"
+          }
+        },
+        "type": "object",
+        "title": "Address"
+      },
+      "AggregateValues": {
+        "properties": {
+          "min": {
+            "type": "string",
+            "title": "Min"
+          },
+          "mean": {
+            "type": "string",
+            "title": "Mean"
+          },
+          "max": {
+            "type": "string",
+            "title": "Max"
+          },
+          "sum": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sum"
+          }
+        },
+        "type": "object",
+        "required": [
+          "min",
+          "mean",
+          "max"
+        ],
+        "title": "AggregateValues"
+      },
+      "Applicant-Input": {
+        "properties": {
+          "hasJoint": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hasjoint"
+          },
+          "dateOfBirth": {
+            "type": "string",
+            "format": "date",
+            "title": "Dateofbirth"
+          },
+          "residence": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ApplicantResidence-Input"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "credit": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ApplicantCredit"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "finances": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ApplicantFinances"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "employment": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ApplicantEmployment"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "dateOfBirth"
+        ],
+        "title": "Applicant"
+      },
+      "Applicant-Output": {
+        "properties": {
+          "hasJoint": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hasjoint"
+          },
+          "dateOfBirth": {
+            "type": "string",
+            "format": "date",
+            "title": "Dateofbirth"
+          },
+          "residence": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ApplicantResidence-Output"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "credit": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ApplicantCredit"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "finances": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ApplicantFinances"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "employment": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ApplicantEmployment"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "dateOfBirth"
+        ],
+        "title": "Applicant"
+      },
+      "ApplicantCredit": {
+        "properties": {
+          "scores": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/NameValuePair"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Scores"
+          },
+          "attributes": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/NameValuePair"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Attributes"
+          },
+          "calculatedFields": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/CreditCalculatedFields"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "title": "ApplicantCredit"
+      },
+      "ApplicantEmployment": {
+        "properties": {
+          "employer": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Employer"
+          },
+          "title": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Title"
+          },
+          "monthsEmployed": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Monthsemployed"
+          }
+        },
+        "type": "object",
+        "title": "ApplicantEmployment"
+      },
+      "ApplicantFinances": {
+        "properties": {
+          "dti": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Dti"
+          },
+          "pti": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Pti"
+          },
+          "income": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ApplicantIncome"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "title": "ApplicantFinances"
+      },
+      "ApplicantIncome": {
+        "properties": {
+          "amountMonthly": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Amountmonthly"
+          }
+        },
+        "type": "object",
+        "title": "ApplicantIncome"
+      },
+      "ApplicantLoan": {
+        "properties": {
+          "payoff": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Payoff"
+          },
+          "monthlyPayment": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Monthlypayment"
+          },
+          "apr": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Apr"
+          },
+          "originalAmount": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Originalamount"
+          },
+          "originalTerm": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Originalterm"
+          },
+          "ltv": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ltv"
+          },
+          "status": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Status"
+          },
+          "remainingTerm": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Remainingterm"
+          },
+          "ecoaDescription": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ecoadescription"
+          },
+          "daysDelinquent30": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Daysdelinquent30"
+          },
+          "daysDelinquent90": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Daysdelinquent90"
+          },
+          "amountPastDue": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Amountpastdue"
+          },
+          "lienHolder": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lienholder",
+            "default": ""
+          },
+          "lienHolderSubCode": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lienholdersubcode"
+          },
+          "lenderCompanyType": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lendercompanytype"
+          },
+          "monthsOfLoanHistory": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Monthsofloanhistory"
+          }
+        },
+        "type": "object",
+        "title": "ApplicantLoan"
+      },
+      "ApplicantResidence-Input": {
+        "properties": {
+          "address": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Address"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "monthlyPayment": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Monthlypayment"
+          },
+          "status": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/HousingStatusEnum"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "monthsAtResidence": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Monthsatresidence"
+          }
+        },
+        "type": "object",
+        "title": "ApplicantResidence"
+      },
+      "ApplicantResidence-Output": {
+        "properties": {
+          "address": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Address"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "monthlyPayment": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Monthlypayment"
+          },
+          "status": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/HousingStatusEnum"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "monthsAtResidence": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Monthsatresidence"
+          }
+        },
+        "type": "object",
+        "title": "ApplicantResidence"
+      },
+      "Application-Input": {
+        "properties": {
+          "applicationId": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Applicationid"
+          },
+          "sourceSystem": {
+            "$ref": "#/components/schemas/SourceSystemCodeEnum"
+          },
+          "applicationSourceId": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Applicationsourceid"
+          },
+          "appliedDate": {
+            "type": "string",
+            "format": "date",
+            "title": "Applieddate"
+          },
+          "vehicle": {
+            "$ref": "#/components/schemas/Vehicle-Input"
+          },
+          "applicant": {
+            "$ref": "#/components/schemas/Applicant-Input"
+          },
+          "loan": {
+            "$ref": "#/components/schemas/ApplicantLoan"
+          }
+        },
+        "type": "object",
+        "required": [
+          "sourceSystem",
+          "appliedDate",
+          "vehicle",
+          "applicant",
+          "loan"
+        ],
+        "title": "Application"
+      },
+      "Application-Output": {
+        "properties": {
+          "applicationId": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Applicationid"
+          },
+          "sourceSystem": {
+            "$ref": "#/components/schemas/SourceSystemCodeEnum"
+          },
+          "applicationSourceId": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Applicationsourceid"
+          },
+          "appliedDate": {
+            "type": "string",
+            "format": "date",
+            "title": "Applieddate"
+          },
+          "vehicle": {
+            "$ref": "#/components/schemas/Vehicle-Output"
+          },
+          "applicant": {
+            "$ref": "#/components/schemas/Applicant-Output"
+          },
+          "loan": {
+            "$ref": "#/components/schemas/ApplicantLoan"
+          }
+        },
+        "type": "object",
+        "required": [
+          "sourceSystem",
+          "appliedDate",
+          "vehicle",
+          "applicant",
+          "loan"
+        ],
+        "title": "Application"
+      },
+      "BestEnum": {
+        "type": "string",
+        "enum": [
+          "Approval",
+          "Payment",
+          "Term",
+          "Rate"
+        ],
+        "title": "BestEnum"
+      },
+      "BookoutValues": {
+        "properties": {
+          "cleanRetail": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Cleanretail"
+          }
+        },
+        "type": "object",
+        "title": "BookoutValues"
+      },
+      "Combinator": {
+        "type": "string",
+        "enum": [
+          "and",
+          "or"
+        ],
+        "title": "Combinator",
+        "description": "Qualifier keywords for use in ruleset where property"
+      },
+      "CreditCalculatedFields": {
+        "properties": {
+          "reportedYearsEmployed": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reportedyearsemployed"
+          }
+        },
+        "type": "object",
+        "title": "CreditCalculatedFields"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HardcutsSchema-Input": {
+        "properties": {
+          "rules": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "object"
+                },
+                {
+                  "$ref": "#/components/schemas/RuleSchema"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Rules"
+          },
+          "combinator": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Combinator"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": "and"
+          }
+        },
+        "type": "object",
+        "required": [
+          "rules"
+        ],
+        "title": "HardcutsSchema",
+        "description": "This is the model we use for openapi because it avoids cyclic refs",
+        "examples": [
+          {
+            "combinator": "and",
+            "rules": [
+              {
+                "field": "STATE",
+                "operator": "==",
+                "value": "TX"
+              },
+              {
+                "combinator": "or",
+                "rules": [
+                  {
+                    "field": "AUTO2 ",
+                    "operator": ">",
+                    "value": 700
+                  },
+                  {
+                    "field": "LTV",
+                    "operator": "<",
+                    "value": 0.9
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "HardcutsSchema-Output": {
+        "properties": {
+          "rules": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "object"
+                },
+                {
+                  "$ref": "#/components/schemas/RuleSchema"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Rules"
+          },
+          "combinator": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Combinator"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": "and"
+          }
+        },
+        "type": "object",
+        "required": [
+          "rules"
+        ],
+        "title": "HardcutsSchema",
+        "description": "This is the model we use for openapi because it avoids cyclic refs",
+        "examples": [
+          {
+            "combinator": "and",
+            "rules": [
+              {
+                "field": "STATE",
+                "operator": "==",
+                "value": "TX"
+              },
+              {
+                "combinator": "or",
+                "rules": [
+                  {
+                    "field": "AUTO2 ",
+                    "operator": ">",
+                    "value": 700
+                  },
+                  {
+                    "field": "LTV",
+                    "operator": "<",
+                    "value": 0.9
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "HousingStatusEnum": {
+        "type": "string",
+        "enum": [
+          "OWN",
+          "RENT",
+          "OTHER"
+        ],
+        "title": "HousingStatusEnum"
+      },
+      "IdpTokenSchema": {
+        "properties": {
+          "access_token": {
+            "type": "string",
+            "title": "Access Token"
+          },
+          "expires_in": {
+            "type": "integer",
+            "title": "Expires In"
+          },
+          "token_type": {
+            "type": "string",
+            "title": "Token Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "access_token",
+          "expires_in",
+          "token_type"
+        ],
+        "title": "IdpTokenSchema"
+      },
+      "LenderInputSchema": {
+        "properties": {
+          "lenderCode": {
+            "type": "string",
+            "title": "Lendercode"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "terms": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Terms",
+            "default": [
+              24,
+              36,
+              48,
+              60,
+              66,
+              72,
+              84,
+              96,
+              120
+            ]
+          },
+          "submissionTypes": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/LenderSubmissionTypeSchema"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Submissiontypes"
+          },
+          "ruleset": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/HardcutsSchema-Input"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "isActive": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Isactive"
+          },
+          "createdAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Createdat"
+          },
+          "updatedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Updatedat"
+          }
+        },
+        "type": "object",
+        "required": [
+          "lenderCode",
+          "name"
+        ],
+        "title": "LenderInputSchema",
+        "examples": [
+          {
+            "lenderCode": "FAKE_CREDIT_UNION",
+            "name": "Fake Credit Union",
+            "ruleset": {
+              "combinator": "and",
+              "rules": [
+                {
+                  "field": "STATE",
+                  "operator": "==",
+                  "value": "TX"
+                },
+                {
+                  "combinator": "or",
+                  "rules": [
+                    {
+                      "field": "AUTO2 ",
+                      "operator": ">",
+                      "value": 700
+                    },
+                    {
+                      "field": "LTV",
+                      "operator": "<",
+                      "value": 0.9
+                    }
+                  ]
+                }
+              ]
+            },
+            "submissionTypes": [
+              {
+                "value": "Prime"
+              },
+              {
+                "value": "OpenLending"
+              }
+            ],
+            "terms": [
+              24,
+              36,
+              48,
+              60,
+              66,
+              72,
+              84,
+              96,
+              120
+            ]
+          }
+        ]
+      },
+      "LenderOfferResponse": {
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "title": "Uuid"
+          },
+          "rate": {
+            "type": "number",
+            "title": "Rate"
+          },
+          "payment": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Payment"
+          },
+          "term": {
+            "type": "integer",
+            "title": "Term"
+          },
+          "best": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/BestEnum"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Best"
+          },
+          "funding": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Funding"
+          },
+          "lenderCode": {
+            "type": "string",
+            "title": "Lendercode"
+          },
+          "lenderName": {
+            "type": "string",
+            "title": "Lendername"
+          },
+          "approvalProbability": {
+            "type": "number",
+            "title": "Approvalprobability"
+          },
+          "submissionType": {
+            "type": "string",
+            "title": "Submissiontype"
+          }
+        },
+        "type": "object",
+        "required": [
+          "uuid",
+          "rate",
+          "term",
+          "lenderCode",
+          "lenderName",
+          "approvalProbability",
+          "submissionType"
+        ],
+        "title": "LenderOfferResponse",
+        "examples": [
+          {
+            "approvalProbability": 0.66167593,
+            "lenderCode": "AFFINITY",
+            "lenderName": "Affinity Federal Credit Union",
+            "payment": 279.92476522045007,
+            "rate": 0.0492546372,
+            "submissionType": "PRIME",
+            "term": 48.0,
+            "uuid": "f457897e-8f1f-437f-bfd5-885d27eb8d0c"
+          }
+        ]
+      },
+      "LenderOffers": {
+        "properties": {
+          "lenderCode": {
+            "type": "string",
+            "title": "Lendercode"
+          },
+          "lenderName": {
+            "type": "string",
+            "title": "Lendername"
+          },
+          "approvalProbability": {
+            "type": "number",
+            "title": "Approvalprobability"
+          },
+          "submissionType": {
+            "type": "string",
+            "title": "Submissiontype"
+          },
+          "best": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/BestEnum"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Best"
+          },
+          "offers": {
+            "items": {
+              "$ref": "#/components/schemas/LenderTermOffer"
+            },
+            "type": "array",
+            "title": "Offers"
+          }
+        },
+        "type": "object",
+        "required": [
+          "lenderCode",
+          "lenderName",
+          "approvalProbability",
+          "submissionType",
+          "offers"
+        ],
+        "title": "LenderOffers"
+      },
+      "LenderOutputSchema": {
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "title": "Uuid"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "lenderCode": {
+            "type": "string",
+            "title": "Lendercode"
+          },
+          "terms": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Terms",
+            "default": [
+              24,
+              36,
+              48,
+              60,
+              66,
+              72,
+              84,
+              96,
+              120
+            ]
+          },
+          "submissionTypes": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/LenderSubmissionTypeSchema"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Submissiontypes"
+          },
+          "isActive": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Isactive"
+          },
+          "createdAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Createdat"
+          },
+          "updatedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Updatedat"
+          }
+        },
+        "type": "object",
+        "required": [
+          "uuid",
+          "name",
+          "lenderCode"
+        ],
+        "title": "LenderOutputSchema",
+        "examples": [
+          {
+            "createdAt": "2022-12-17T01:11:53.757698",
+            "isActive": true,
+            "lenderCode": "AUTOPAY",
+            "name": "AUTOPAY",
+            "submissionTypes": [
+              {
+                "uuid": "763db324-5df9-4ff8-9940-27e0180d9298",
+                "value": "Prime"
+              }
+            ],
+            "terms": [
+              24,
+              36,
+              48,
+              60,
+              66,
+              72,
+              84,
+              96,
+              120
+            ],
+            "uuid": "49b47045-c957-4f14-8a9e-f3dad4c1e97c"
+          }
+        ]
+      },
+      "LenderSubmissionTypeEnum": {
+        "type": "string",
+        "enum": [
+          "Prime",
+          "OpenLending"
+        ],
+        "title": "LenderSubmissionTypeEnum"
+      },
+      "LenderSubmissionTypeSchema": {
+        "properties": {
+          "uuid": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Uuid"
+          },
+          "value": {
+            "$ref": "#/components/schemas/LenderSubmissionTypeEnum"
+          },
+          "created_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "value"
+        ],
+        "title": "LenderSubmissionTypeSchema"
+      },
+      "LenderTermOffer": {
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "title": "Uuid"
+          },
+          "rate": {
+            "type": "number",
+            "title": "Rate"
+          },
+          "payment": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Payment"
+          },
+          "term": {
+            "type": "integer",
+            "title": "Term"
+          },
+          "best": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/BestEnum"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Best"
+          },
+          "funding": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Funding"
+          }
+        },
+        "type": "object",
+        "required": [
+          "uuid",
+          "rate",
+          "term"
+        ],
+        "title": "LenderTermOffer"
+      },
+      "LendersListOutputSchema": {
+        "items": {
+          "$ref": "#/components/schemas/LenderOutputSchema"
+        },
+        "type": "array",
+        "title": "LendersListOutputSchema",
+        "examples": [
+          {
+            "createdAt": "2022-12-17T01:11:53.757698",
+            "isActive": true,
+            "lenderCode": "AUTOPAY",
+            "name": "AUTOPAY",
+            "submissionTypes": [
+              {
+                "uuid": "763db324-5df9-4ff8-9940-27e0180d9298",
+                "value": "Prime"
+              }
+            ],
+            "terms": [
+              24,
+              36,
+              48,
+              60,
+              66,
+              72,
+              84,
+              96,
+              120
+            ],
+            "uuid": "49b47045-c957-4f14-8a9e-f3dad4c1e97c"
+          },
+          {
+            "createdAt": "2022-12-17T01:11:53.757698",
+            "isActive": false,
+            "lenderCode": "SANDIEGO",
+            "name": "San Diego County CU",
+            "submissionTypes": [
+              {
+                "uuid": "c6b385d4-be5a-4ec5-9c08-2a918d10a4f2",
+                "value": "Prime"
+              }
+            ],
+            "terms": [
+              84,
+              78,
+              42,
+              66
+            ],
+            "updatedAt": "2023-12-05T00:01:14.955881",
+            "uuid": "d1d97c04-795b-4461-b2e0-d1e0bc821245"
+          },
+          {
+            "createdAt": "2022-12-17T01:11:53.757698",
+            "isActive": false,
+            "lenderCode": "SIERRA",
+            "name": "Sierra Point CU",
+            "submissionTypes": [
+              {
+                "uuid": "bfdf5af2-5ae0-4e79-9ef0-b365fc3d88b4",
+                "value": "Prime"
+              }
+            ],
+            "terms": [
+              72,
+              60,
+              24,
+              48,
+              36
+            ],
+            "updatedAt": "2023-12-04T09:17:04.452867",
+            "uuid": "f09f25af-ba91-4168-b427-29bddf9c10f8"
+          }
+        ]
+      },
+      "NameValuePair": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Value"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "title": "NameValuePair"
+      },
+      "NewAccountSchema": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "type": {
+            "$ref": "#/components/schemas/AccountTypeEnum"
+          },
+          "configuration": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AccountConfig"
+              }
+            ],
+            "default": {
+              "payload_overrides": {
+                "application": {},
+                "modifiers": {}
+              }
+            }
+          },
+          "client_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Client Id"
+          },
+          "usage_plan": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Usage Plan"
+          },
+          "scopes": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true,
+            "title": "Scopes"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "type"
+        ],
+        "title": "NewAccountSchema"
+      },
+      "OffersModifiers": {
+        "properties": {
+          "approvalCutoff": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Approvalcutoff",
+            "default": 0.0
+          },
+          "normalizeTerms": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Normalizeterms",
+            "default": false
+          }
+        },
+        "type": "object",
+        "title": "OffersModifiers"
+      },
+      "Operator": {
+        "type": "string",
+        "enum": [
+          "!=",
+          "==",
+          "<=",
+          ">=",
+          "<",
+          ">",
+          "in",
+          "not in"
+        ],
+        "title": "Operator"
+      },
+      "PayloadOverrides": {
+        "properties": {
+          "application": {
+            "anyOf": [
+              {
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Application",
+            "default": {}
+          },
+          "modifiers": {
+            "anyOf": [
+              {
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Modifiers",
+            "default": {}
+          }
+        },
+        "type": "object",
+        "title": "PayloadOverrides",
+        "description": "application and modifers are just dicts, so they can be expanded with any properties"
+      },
+      "QualEngineRequestSchema-Input": {
+        "properties": {
+          "application": {
+            "$ref": "#/components/schemas/Application-Input"
+          },
+          "modifiers": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/OffersModifiers"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": {
+              "approvalCutoff": 0.0,
+              "normalizeTerms": false
+            }
+          }
+        },
+        "type": "object",
+        "required": [
+          "application"
+        ],
+        "title": "QualEngineRequestSchema",
+        "examples": [
+          {
+            "application": {
+              "applicant": {
+                "credit": {
+                  "attributes": [
+                    {
+                      "name": "ALL0100",
+                      "value": 17.0
+                    },
+                    {
+                      "name": "ALL0136",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "ALL2707",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "ALL2840",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "ALL4070",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "ALL5820",
+                      "value": 735.0
+                    },
+                    {
+                      "name": "ALL7111",
+                      "value": 70.0
+                    },
+                    {
+                      "name": "ALL7116",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "ALL8164",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "ALL8220",
+                      "value": 206.0
+                    },
+                    {
+                      "name": "ALL9120",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "AUA6280",
+                      "value": 1.0
+                    },
+                    {
+                      "name": "AUA8151",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "AUA8220",
+                      "value": 140.0
+                    },
+                    {
+                      "name": "COL2750",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "COL5060",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "COL5066",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "IQT9417",
+                      "value": 1.0
+                    },
+                    {
+                      "name": "DRV5002",
+                      "value": 9973.0
+                    },
+                    {
+                      "name": "DRV5030",
+                      "value": 9973.0
+                    },
+                    {
+                      "name": "DRVSMLM",
+                      "value": 31100.0
+                    },
+                    {
+                      "name": "DRVTR12",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "MTA5830",
+                      "value": 0.0
+                    }
+                  ],
+                  "calculatedFields": {
+                    "reportedYearsEmployed": 3
+                  },
+                  "scores": [
+                    {
+                      "name": "AUTO2",
+                      "value": 790
+                    },
+                    {
+                      "name": "FICO2",
+                      "value": 787
+                    }
+                  ]
+                },
+                "dateOfBirth": "1987-05-11",
+                "employment": {
+                  "employer": "REGAN FURNISHINGS",
+                  "monthsEmployed": 12,
+                  "title": "Cashier"
+                },
+                "finances": {
+                  "dti": 0.37,
+                  "income": {
+                    "amountMonthly": 2730.0
+                  },
+                  "pti": 0.13
+                },
+                "hasJoint": false,
+                "residence": {
+                  "address": {
+                    "city": "Pepperell",
+                    "state": "MA",
+                    "zip": "01463"
+                  },
+                  "monthlyPayment": 300.0,
+                  "monthsAtResidence": 24,
+                  "status": "RENT"
+                }
+              },
+              "applicationId": 4116104,
+              "applicationSourceId": 167,
+              "appliedDate": "2022-10-24",
+              "loan": {
+                "apr": 0.0456,
+                "lienHolder": "FLAGSHIP CREDIT ACCEPT",
+                "lienHolderSubCode": "1137300",
+                "ltv": 0.664833,
+                "monthlyPayment": 359.0,
+                "monthsOfLoanHistory": 37,
+                "originalAmount": 22579.0,
+                "originalTerm": 72,
+                "payoff": 12173.0,
+                "remainingTerm": 37
+              },
+              "sourceSystem": "LOS",
+              "vehicle": {
+                "bookout": {
+                  "KBB": {
+                    "cleanRetail": 17684.0
+                  },
+                  "NADA": {
+                    "cleanRetail": 20175.0
+                  }
+                },
+                "make": "Lexus",
+                "mileage": 108185.0,
+                "model": "ES",
+                "trim": "Sedan 4D ES350 3.5L V6",
+                "year": 2015
+              }
+            },
+            "modifiers": {
+              "approvalCutoff": 0.5
+            }
+          }
+        ]
+      },
+      "QualEngineRequestSchema-Output": {
+        "properties": {
+          "application": {
+            "$ref": "#/components/schemas/Application-Output"
+          },
+          "modifiers": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/OffersModifiers"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": {
+              "approvalCutoff": 0.0,
+              "normalizeTerms": false
+            }
+          }
+        },
+        "type": "object",
+        "required": [
+          "application"
+        ],
+        "title": "QualEngineRequestSchema",
+        "examples": [
+          {
+            "application": {
+              "applicant": {
+                "credit": {
+                  "attributes": [
+                    {
+                      "name": "ALL0100",
+                      "value": 17.0
+                    },
+                    {
+                      "name": "ALL0136",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "ALL2707",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "ALL2840",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "ALL4070",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "ALL5820",
+                      "value": 735.0
+                    },
+                    {
+                      "name": "ALL7111",
+                      "value": 70.0
+                    },
+                    {
+                      "name": "ALL7116",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "ALL8164",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "ALL8220",
+                      "value": 206.0
+                    },
+                    {
+                      "name": "ALL9120",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "AUA6280",
+                      "value": 1.0
+                    },
+                    {
+                      "name": "AUA8151",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "AUA8220",
+                      "value": 140.0
+                    },
+                    {
+                      "name": "COL2750",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "COL5060",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "COL5066",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "IQT9417",
+                      "value": 1.0
+                    },
+                    {
+                      "name": "DRV5002",
+                      "value": 9973.0
+                    },
+                    {
+                      "name": "DRV5030",
+                      "value": 9973.0
+                    },
+                    {
+                      "name": "DRVSMLM",
+                      "value": 31100.0
+                    },
+                    {
+                      "name": "DRVTR12",
+                      "value": 0.0
+                    },
+                    {
+                      "name": "MTA5830",
+                      "value": 0.0
+                    }
+                  ],
+                  "calculatedFields": {
+                    "reportedYearsEmployed": 3
+                  },
+                  "scores": [
+                    {
+                      "name": "AUTO2",
+                      "value": 790
+                    },
+                    {
+                      "name": "FICO2",
+                      "value": 787
+                    }
+                  ]
+                },
+                "dateOfBirth": "1987-05-11",
+                "employment": {
+                  "employer": "REGAN FURNISHINGS",
+                  "monthsEmployed": 12,
+                  "title": "Cashier"
+                },
+                "finances": {
+                  "dti": 0.37,
+                  "income": {
+                    "amountMonthly": 2730.0
+                  },
+                  "pti": 0.13
+                },
+                "hasJoint": false,
+                "residence": {
+                  "address": {
+                    "city": "Pepperell",
+                    "state": "MA",
+                    "zip": "01463"
+                  },
+                  "monthlyPayment": 300.0,
+                  "monthsAtResidence": 24,
+                  "status": "RENT"
+                }
+              },
+              "applicationId": 4116104,
+              "applicationSourceId": 167,
+              "appliedDate": "2022-10-24",
+              "loan": {
+                "apr": 0.0456,
+                "lienHolder": "FLAGSHIP CREDIT ACCEPT",
+                "lienHolderSubCode": "1137300",
+                "ltv": 0.664833,
+                "monthlyPayment": 359.0,
+                "monthsOfLoanHistory": 37,
+                "originalAmount": 22579.0,
+                "originalTerm": 72,
+                "payoff": 12173.0,
+                "remainingTerm": 37
+              },
+              "sourceSystem": "LOS",
+              "vehicle": {
+                "bookout": {
+                  "KBB": {
+                    "cleanRetail": 17684.0
+                  },
+                  "NADA": {
+                    "cleanRetail": 20175.0
+                  }
+                },
+                "make": "Lexus",
+                "mileage": 108185.0,
+                "model": "ES",
+                "trim": "Sedan 4D ES350 3.5L V6",
+                "year": 2015
+              }
+            },
+            "modifiers": {
+              "approvalCutoff": 0.5
+            }
+          }
+        ]
+      },
+      "QualEngineResponse": {
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "title": "Uuid"
+          },
+          "metadata": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/QualEngineSummary"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "lenderOffers": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/LenderOffers"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lenderoffers"
+          }
+        },
+        "type": "object",
+        "required": [
+          "uuid"
+        ],
+        "title": "QualEngineResponse",
+        "examples": [
+          {
+            "lenderOffers": [
+              {
+                "approvalProbability": 0.9634155677,
+                "lenderCode": "EXETER_FINANCE",
+                "lenderName": "Exeter Finance, LLC",
+                "offers": [
+                  {
+                    "payment": 325.85933155923175,
+                    "rate": 0.1288211627,
+                    "term": 48.0,
+                    "uuid": "d640a6ae-6edf-459b-bb8f-67d533b1d56c"
+                  },
+                  {
+                    "payment": 276.6144191033706,
+                    "rate": 0.1294240992,
+                    "term": 60.0,
+                    "uuid": "68d97cd3-34ea-4011-9c5d-1314a4905f2c"
+                  },
+                  {
+                    "payment": 244.67936416962073,
+                    "rate": 0.1304936644,
+                    "term": 72.0,
+                    "uuid": "6e30f2f7-3b29-4b1a-8de4-f6466ea6d745"
+                  },
+                  {
+                    "payment": 225.03249942032912,
+                    "rate": 0.1353886393,
+                    "term": 84.0,
+                    "uuid": "85fe25b6-07dc-48d0-9679-4d6baf222762"
+                  }
+                ],
+                "submissionType": "Prime"
+              }
+            ],
+            "metadata": {
+              "counts": {
+                "totalLenders": 1,
+                "totalOffers": 4
+              },
+              "createdAt": "2023-09-29T14:53:51.345371",
+              "modifiers": {
+                "approvalCutoff": 0.9
+              },
+              "payment": {
+                "max": 600,
+                "mean": 452,
+                "min": 200
+              },
+              "probabilities": {
+                "max": 0.71,
+                "mean": 0.65,
+                "min": 0.53
+              },
+              "rates": {
+                "max": 0.1353886393,
+                "mean": 0.12995888179999998,
+                "min": 0.1288211627
+              },
+              "terms": [
+                48,
+                60,
+                72,
+                84
+              ]
+            },
+            "uuid": "09b85699-23b1-4d41-af06-584dd9522ada"
+          }
+        ]
+      },
+      "QualEngineSummary": {
+        "properties": {
+          "modifiers": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/OffersModifiers"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "terms": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Terms"
+          },
+          "rates": {
+            "$ref": "#/components/schemas/AggregateValues"
+          },
+          "probabilities": {
+            "$ref": "#/components/schemas/AggregateValues"
+          },
+          "payment": {
+            "$ref": "#/components/schemas/AggregateValues"
+          },
+          "funding": {
+            "$ref": "#/components/schemas/AggregateValues"
+          },
+          "counts": {
+            "$ref": "#/components/schemas/SummaryCounts"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Createdat"
+          }
+        },
+        "type": "object",
+        "required": [
+          "terms",
+          "rates",
+          "probabilities",
+          "payment",
+          "funding",
+          "counts",
+          "createdAt"
+        ],
+        "title": "QualEngineSummary"
+      },
+      "RuleSchema": {
+        "properties": {
+          "field": {
+            "type": "string",
+            "title": "Field"
+          },
+          "operator": {
+            "$ref": "#/components/schemas/Operator"
+          },
+          "value": {
+            "title": "Value"
+          }
+        },
+        "type": "object",
+        "required": [
+          "field",
+          "operator",
+          "value"
+        ],
+        "title": "RuleSchema"
+      },
+      "SourceSystemCodeEnum": {
+        "type": "string",
+        "enum": [
+          "NOT_SET",
+          "APEX",
+          "ATLAS",
+          "LOS",
+          "EXTERNAL"
+        ],
+        "title": "SourceSystemCodeEnum",
+        "description": "Defines the source system context of an app_id\n\n# todo this should eventually become a table in its own right"
+      },
+      "StateEnum": {
+        "type": "string",
+        "enum": [
+          "AL",
+          "AK",
+          "AZ",
+          "AR",
+          "CA",
+          "CO",
+          "CT",
+          "DC",
+          "DE",
+          "FL",
+          "GA",
+          "HI",
+          "ID",
+          "IL",
+          "IN",
+          "IA",
+          "KS",
+          "KY",
+          "LA",
+          "ME",
+          "MD",
+          "MA",
+          "MI",
+          "MN",
+          "MS",
+          "MO",
+          "MT",
+          "NE",
+          "NV",
+          "NH",
+          "NJ",
+          "NM",
+          "NY",
+          "NC",
+          "ND",
+          "OH",
+          "OK",
+          "OR",
+          "PA",
+          "PR",
+          "RI",
+          "SC",
+          "SD",
+          "TN",
+          "TX",
+          "UT",
+          "VT",
+          "VA",
+          "WA",
+          "WV",
+          "WI",
+          "WY"
+        ],
+        "title": "StateEnum"
+      },
+      "SummaryCounts": {
+        "properties": {
+          "totalLenders": {
+            "type": "integer",
+            "title": "Totallenders"
+          },
+          "totalOffers": {
+            "type": "integer",
+            "title": "Totaloffers"
+          }
+        },
+        "type": "object",
+        "required": [
+          "totalLenders",
+          "totalOffers"
+        ],
+        "title": "SummaryCounts"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "Vehicle-Input": {
+        "properties": {
+          "make": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Make"
+          },
+          "mileage": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mileage"
+          },
+          "model": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Model"
+          },
+          "year": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Year"
+          },
+          "trim": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Trim"
+          },
+          "bookout": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/VehicleBookout"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "title": "Vehicle"
+      },
+      "Vehicle-Output": {
+        "properties": {
+          "make": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Make"
+          },
+          "mileage": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mileage"
+          },
+          "model": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Model"
+          },
+          "year": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Year"
+          },
+          "trim": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Trim"
+          },
+          "bookout": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/VehicleBookout"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "title": "Vehicle"
+      },
+      "VehicleBookout": {
+        "properties": {
+          "NADA": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/BookoutValues"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "KBB": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/BookoutValues"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "title": "VehicleBookout"
+      }
+    },
+    "securitySchemes": {
+      "JWTBearer": {
+        "type": "http",
+        "scheme": "bearer"
+      },
+      "HTTPBasic": {
+        "type": "http",
+        "scheme": "basic"
+      }
+    }
+  }
+}
